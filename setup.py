@@ -4,13 +4,13 @@ import os.path
 from distutils.command.build_py import build_py
 
 
-initpath = os.path.join(os.path.dirname(__file__), 'shapestats/__init__.py')
-with open('shapestats/__init__.py') as f:
+initpath = os.path.join(os.path.dirname(__file__), 'shapestats_kc/__init__.py')
+with open('shapestats_kc/__init__.py') as f:
     version = f.readline().split('=')[1].strip()
 print(version)
 
 
-setup(name='shapestats', # name of package
+setup(name='shapestats_kc', # name of package
       version=eval(version),
       description='tools & methods to measure shape regularity', #short <80chr description
       url='https://github.com/ljwolf/shapestats', #github repo
