@@ -10,7 +10,7 @@ with open('shapestats/__init__.py') as f:
 print(version)
 
 
-setup(name='shapestats_kc', # name of package
+setup(name='shapestats', # name of package
       version=eval(version),
       description='tools & methods to measure shape regularity', #short <80chr description
       url='https://github.com/ljwolf/shapestats', #github repo
@@ -30,7 +30,7 @@ setup(name='shapestats_kc', # name of package
         'Programming Language :: Python :: 3.6'
         ],
       license='MIT',
-      packages=['shapestats_kc'], # add your package name here as a string
+      packages=['shapestats'], # add your package name here as a string
       install_requires=['scipy','shapely','libpysal'],
       zip_safe=False,
       cmdclass = {'build.py':build_py})
