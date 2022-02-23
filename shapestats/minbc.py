@@ -49,7 +49,8 @@ def minimum_bounding_circle(points):
             radius, center = circles[lexmax]
             if was_polygon:
                 from shapely import geometry
-                return geometry.Point(tuple(center)).buffer(radius)
+                #return geometry.Point(tuple(center)).buffer(radius)
+                return circles[lexmax]
             return circles[lexmax]
         i+=1
 
